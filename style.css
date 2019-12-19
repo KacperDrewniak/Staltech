@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Header */
+
+header{
+    height:80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url('https://cdn.pixabay.com/photo/2014/10/23/16/01/weld-499919_960_720.jpg');
+}
+header main{
+    margin:0 auto;
+    width: 1200px;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+header main nav {
+
+background-color: red;
+}
+
+header main nav ul{
+    text-align: center;
+}
+
+header main nav ul li{
+    color:white;
+    display:inline-block;
+}
+
+header main div.mainText{
+    color:white;
+    font-size: 50px;
+}
+
+/* First Wrappr */
+
+div.wrapper1{
+    width:1200px;
+    height: 200vh;
+    background-color:rgb(255, 255, 255);
+    margin:-100px auto;
+    box-shadow:black 20px 20px 20px
+}
