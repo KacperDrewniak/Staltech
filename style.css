@@ -1,47 +1,219 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
 
-header{
-    height:80vh;
+header {
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:url('https://cdn.pixabay.com/photo/2014/10/23/16/01/weld-499919_960_720.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2014/10/23/16/01/weld-499919_960_720.jpg');
 }
-header main{
-    margin:0 auto;
+
+header main {
+    margin: 0 auto;
     width: 1200px;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.61);
 }
-header main nav {
 
-background-color: red;
+header main nav {
+    background-color: white;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 140px;
 }
 
-header main nav ul{
+header main nav ul {
     text-align: center;
 }
 
-header main nav ul li{
-    color:white;
-    display:inline-block;
+header main nav ul li {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    font-family: 'Saira', sans-serif;
+    font-size: 20px;
+    padding: 0 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 100px;
+    transition: 0.2s;
 }
 
-header main div.mainText{
-    color:white;
+header main nav ul li:hover {
+    background-color: #122261;
+    color: white;
+}
+
+header main div.mainText {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    margin: 100px 0 0 200px;
     font-size: 50px;
 }
 
-/* First Wrappr */
-
-div.wrapper1{
-    width:1200px;
-    height: 200vh;
-    background-color:rgb(255, 255, 255);
-    margin:-100px auto;
-    box-shadow:black 20px 20px 20px
+header main div.mainText button {
+    background-color: #6a7eb2;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
 }
+
+/* First Wrapper */
+
+div.wrapper1 {
+    width: 1200px;
+    min-height: 400vh;
+    background-color: rgb(255, 255, 255);
+    margin: -60px auto;
+    box-shadow: black 20px 20px 20px 20px;
+}
+
+/* wrapperAbout */
+div.about {
+    width: 50px;
+    height: 50px;
+    background-color: #040073;
+}
+
+/* ABOUT US ICON  */
+/* ABOUT US ICON  */
+/* ABOUT US ICON  */
+div.wrapperAbout div.about i {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+div.wrapperAbout div.about p.aboutUs {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-left: 50px;
+    width: 200px;
+    font-size: 30px;
+    color: #040073;
+}
+
+/* FLEXBOX */
+/* FLEXBOX */
+/* FLEXBOX */
+div.wrapperAbout div.about div.whoAreWe {
+    width: 400px;
+    height: 400px;
+    background-color: #03004d;
+}
+
+div.wrapperAbout div.about div.whoAreWe i {
+    color: #0c6fa2;
+    font-size: 100px;
+    margin: 100px calc(275px / 2) 0;
+}
+
+div.whoAreWe p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    color: #0c6fa2;
+}
+
+div.wrapperAbout div.about div.whatWeCan {
+    margin-left: 800px;
+    width: 400px;
+    height: 400px;
+    background-color: #0c6fa2;
+}
+
+div.wrapperAbout div.about div.whatWeCan i {
+    color: #0f232d;
+    font-size: 100px;
+    margin: 100px calc(312.5px / 2) 0;
+}
+
+div.whatWeCan p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    color: #0f232d;
+}
+
+div.wrapperAbout div.about div.whatWeDo {
+    width: 400px;
+    height: 400px;
+    background-color: #0f232d;
+}
+
+div.wrapperAbout div.about div.whatWeDo i {
+    color: #0c6fa2;
+    font-size: 100px;
+    margin: 100px calc(300px / 2) 0;
+}
+
+div.whatWeDo p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+    color: #0c6fa2;
+}
+
+p.text1,
+p.text2,
+p.text3 {
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    width: 700px;
+    margin: 0 50px 0 450px;
+}
+
+p.text2 {
+    margin-left: 50px;
+}
+
+/* CERTIFICATES */
+/* CERTIFICATES */
+/* CERTIFICATES */
+/* CERTIFICATES */
+div.aboutCertificates {
+    width: 50px;
+    height: 50px;
+    background-color: #777777;
+}
+
+div.wrapperCertificate div.aboutCertificates i {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+
+div.wrapperCertificate div.aboutCertificates p.certificate {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-left: 50px;
+    font-size: 30px;
+    color: #777777;
+}
+
+div.wrapperCertificate {
+    background-color: #777777;
+}
+
+div.certificates {}
+
+
+
+
+/* Realisations */
+/* Realisations */
+/* Realisations */
