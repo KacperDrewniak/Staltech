@@ -20,8 +20,9 @@ header main {
 }
 
 header main nav {
+    margin: 0 auto;
     background-color: white;
-    background-image: url(logo.png);
+    background-image: url(/images/logo.png);
     background-repeat: no-repeat;
     background-position: top center;
     height: 140px;
@@ -32,6 +33,7 @@ header main nav ul {
 }
 
 header main nav ul li {
+    cursor: pointer;
     display: inline-block;
     height: 40px;
     line-height: 40px;
@@ -79,47 +81,42 @@ div.wrapper1 {
     box-shadow: black 20px 20px 20px 20px;
 }
 
-/* wrapperAbout */
-div.about {
-    width: 50px;
-    height: 50px;
-    background-color: #040073;
-}
-
-/* ABOUT US ICON  */
-/* ABOUT US ICON  */
-/* ABOUT US ICON  */
-div.wrapperAbout div.about i {
-    color: white;
-    font-size: 30px;
-    margin: 10px;
-}
-
-div.wrapperAbout div.about p.aboutUs {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    margin-left: 50px;
-    width: 200px;
-    font-size: 30px;
+div.wrapper1 .about {
     color: #040073;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 10px 60px;
 }
 
-/* FLEXBOX */
-/* FLEXBOX */
-/* FLEXBOX */
-div.wrapperAbout div.about div.whoAreWe {
+div.wrapper1 .about i+p {
+    margin: 10px
+}
+
+div.wrapper1 article {
+    display: flex;
+    align-items: center;
+}
+
+div.wrapper1 article:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+div.wrapper1 article .bigDiv {
     width: 400px;
     height: 400px;
     background-color: #03004d;
 }
 
-div.wrapperAbout div.about div.whoAreWe i {
+div.wrapper1 article .bigDiv i {
     color: #0c6fa2;
     font-size: 100px;
     margin: 100px calc(275px / 2) 0;
 }
 
-div.whoAreWe p {
+div.wrapper1 article .bigDiv p {
+
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     text-align: center;
@@ -127,93 +124,33 @@ div.whoAreWe p {
     color: #0c6fa2;
 }
 
-div.wrapperAbout div.about div.whatWeCan {
-    margin-left: 800px;
-    width: 400px;
+div.wrapper1 article div p {
+    margin: 20px;
+}
+
+div.wrapper1 .certyficates {
+    margin: 100px 0;
     height: 400px;
-    background-color: #0c6fa2;
+    background-color: rgb(105, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-div.wrapperAbout div.about div.whatWeCan i {
-    color: #0f232d;
-    font-size: 100px;
-    margin: 100px calc(312.5px / 2) 0;
+div.wrapper1 .certyficates aside {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(102, 102, 110);
 }
 
-div.whatWeCan p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 40px;
-    color: #0f232d;
+.realisation ul {
+    list-style-type: none;
 }
 
-div.wrapperAbout div.about div.whatWeDo {
-    width: 400px;
-    height: 400px;
-    background-color: #0f232d;
+.realisation ul li div {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
 }
 
-div.wrapperAbout div.about div.whatWeDo i {
-    color: #0c6fa2;
-    font-size: 100px;
-    margin: 100px calc(300px / 2) 0;
-}
-
-div.whatWeDo p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    text-align: center;
-    font-size: 40px;
-    color: #0c6fa2;
-}
-
-p.text1,
-p.text2,
-p.text3 {
-    font-family: 'Saira', sans-serif;
-    font-size: 18px;
-    width: 700px;
-    margin: 0 50px 0 450px;
-}
-
-p.text2 {
-    margin-left: 50px;
-}
-
-/* CERTIFICATES */
-/* CERTIFICATES */
-/* CERTIFICATES */
-/* CERTIFICATES */
-div.aboutCertificates {
-    width: 50px;
-    height: 50px;
-    background-color: #777777;
-}
-
-div.wrapperCertificate div.aboutCertificates i {
-    color: white;
-    font-size: 30px;
-    margin: 10px;
-}
-
-div.wrapperCertificate div.aboutCertificates p.certificate {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    margin-left: 50px;
-    font-size: 30px;
-    color: #777777;
-}
-
-div.wrapperCertificate {
-    background-color: #777777;
-}
-
-div.certificates {}
-
-
-
-
-/* Realisations */
-/* Realisations */
-/* Realisations */
+.realisation ul li p {}
